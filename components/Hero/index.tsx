@@ -6,8 +6,8 @@ interface Props {}
 const Hero = () => {
   const info = useContext(InfoContext);
   return (
-    <div className="hero h-screen bg-base-200 lg:px-24 xl:px-44">
-      <div className="hero h-screen bg-base-200">
+    <div className="hero bg-base-200 min-h-screen lg:px-24 xl:px-44">
+      <div className="hero  bg-base-200">
         <div className="hero-content flex-col items-center lg:flex-row-reverse gap-4">
           <img
             src="https://thispersondoesnotexist.com/image"

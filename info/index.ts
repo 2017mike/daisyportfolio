@@ -15,6 +15,13 @@ const info = {
     image: 'https://picsum.photos/600/400', 
     link: "https://tailwindcss.com/docs/height",
     github: "https://github.com/"
+  },
+  {
+    name: 'MyWebDevProject',
+    summary: "This is a full stack web development project that will allow users to create a custom website. They will be able to choose from a variety of templates and designs, and then add their own content. MyWebDevProject will also provide hosting and support for the website.",
+    image: 'https://picsum.photos/600/400', 
+    link: "https://tailwindcss.com/docs/height",
+    github: "https://github.com/"
   }
 ]
 }

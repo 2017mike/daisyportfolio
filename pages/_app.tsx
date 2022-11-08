@@ -16,6 +16,9 @@ const MyApp = () => {
       <InfoContext.Provider value={info}>
         <Navbar />
         <Hero />
+        <h2 className="text-4xl font-bold flex justify-center my-4">
+          Projects
+        </h2>
         {info.projects.map((project, index) => (
           <Project
             key={index}
