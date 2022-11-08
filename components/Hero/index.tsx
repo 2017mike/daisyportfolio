@@ -14,7 +14,7 @@ const Hero = () => {
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">Hi, I'm {info.name}</h1>
+            <h1 className="text-5xl font-bold">Hi, I&apos;m {info.name}</h1>
             <p className="py-6">{info.summary}</p>
             <button className="btn btn-primary">Contact Me</button>
           </div>
