@@ -1,6 +1,35 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppProps } from "next/app";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import React from "react";
+import Project from "../components/Project";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import "../styles/globals.css";
+
+import info from "../info";
+
+export const InfoContext = React.createContext(info);
+
+const MyApp = () => {
+  return (
+    <>
+      <InfoContext.Provider value={info}>
+        <Navbar />
+        <Hero />
+        {info.projects.map((project, index) => (
+          <Project
+            key={index}
+            name={project.name}
+            github={project.github}
+            link={project.link}
+            image={project.image}
+            summary={project.summary}
+            index={index}
+          />
+        ))}
+      </InfoContext.Provider>
+    </>
+  );
+};
+
+export default MyApp;
