@@ -27,6 +27,7 @@ const MyApp = () => {
             link={project.link}
             image={project.image}
             summary={project.summary}
+            technologies={project.technologies}
             index={index}
           />
         ))}
