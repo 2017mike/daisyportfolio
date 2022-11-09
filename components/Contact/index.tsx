@@ -12,7 +12,7 @@ const Contact = (props: Props) => {
       <p className="flex justify-center mb-6">
         Feel free to contact me using this form! You can also message me
         on&nbsp;
-        <a target="_blank" href={info.linkedIn}>
+        <a rel="noreferrer" target="_blank" href={info.linkedIn}>
           LinkedIn.
         </a>
       </p>

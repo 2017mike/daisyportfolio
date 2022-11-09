@@ -67,10 +67,20 @@ const Project = ({
             </div>
             <div className="">{summary}</div>
             <div className="flex gap-2">
-              <a className="btn btn-primary w-1/5" href={link} target="_blank">
+              <a
+                className="btn btn-primary w-1/5"
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Link
               </a>
-              <a className="btn btn w-1/4" href={github} target="_blank">
+              <a
+                className="btn btn w-1/4"
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Github
               </a>
             </div>
@@ -110,10 +120,20 @@ const Project = ({
             </div>
             <div className="">{summary}</div>
             <div className="flex gap-2">
-              <a className="btn btn-primary w-1/5" href={link} target="_blank">
+              <a
+                className="btn btn-primary w-1/5"
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Link
               </a>
-              <a className="btn btn w-1/4" href={github} target="_blank">
+              <a
+                className="btn btn w-1/4"
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Github
               </a>
             </div>
