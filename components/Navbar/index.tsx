@@ -34,20 +34,38 @@ const Navbar = (props: Props) => {
           >
             {sections.map((section) => (
               <li key={section}>
-                <a>{section}</a>
+                <a href={`#${section}`}>{section}</a>
               </li>
             ))}
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/2017mike/zapApp/files/9968907/Michael_Scharf_Resume.pdf"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">{info.name}</a>
+        <a href="" className="btn btn-ghost normal-case text-xl text-accent">
+          {info.name}
+        </a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           {sections.map((section) => (
             <li key={section}>
-              <a>{section}</a>
+              <a href={`#${section}`}>{section}</a>
             </li>
           ))}
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/2017mike/fetchExample/blob/92544679b8ccf65cac72bee3daf008a17a891e5f/Michael_Scharf_Resume.pdf"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </div>

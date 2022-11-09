@@ -28,7 +28,7 @@ const Project = ({
 
   return (
     <>
-      {(index % 2 === 0 && windowWidth > 1024) || windowWidth < 1024 ? (
+      {(index % 2 === 0 && windowWidth > 768) || windowWidth < 768 ? (
         <div className="flex justify-center flex-wrap my-8 px-6 md:gap-6">
           <img
             className="object-cover rounded-2xl sm:w-full md:w-4/12"
@@ -36,7 +36,9 @@ const Project = ({
             alt=""
           />
           <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-full md:w-6/12 md:gap-2  ">
-            <h3 className="stat-value">{name}</h3>
+            <a href={link} target="_blank" rel="noreferrer">
+              <h3 className="stat-value">{name}</h3>
+            </a>
             <div className="flex gap-2 flex-wrap">
               {technologies.map((tech, i) => {
                 //let's make the badges different colors to add some pizzazz
@@ -65,7 +67,7 @@ const Project = ({
                 );
               })}
             </div>
-            <div className="">{summary}</div>
+            <div className="my-4">{summary}</div>
             <div className="flex gap-2">
               <a
                 className="btn btn-primary w-1/5"
@@ -89,7 +91,9 @@ const Project = ({
       ) : (
         <div className="flex justify-center flex-wrap my-8 px-6 md:gap-6">
           <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-full md:w-6/12 md:gap-2  ">
-            <h3 className="stat-value">{name}</h3>
+            <a href={link} target="_blank" rel="noreferrer">
+              <h3 className="stat-value">{name}</h3>
+            </a>
             <div className="flex gap-2 flex-wrap">
               {technologies.map((tech, i) => {
                 //let's make the badges different colors to add some pizzazz
@@ -118,7 +122,7 @@ const Project = ({
                 );
               })}
             </div>
-            <div className="">{summary}</div>
+            <div className="my-4">{summary}</div>
             <div className="flex gap-2">
               <a
                 className="btn btn-primary w-1/5"

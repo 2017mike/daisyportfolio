@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import React from "react";
 import Project from "../components/Project";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 import "../styles/globals.css";
 
@@ -17,7 +18,10 @@ const MyApp = () => {
       <InfoContext.Provider value={info}>
         <Navbar />
         <Hero />
-        <h2 className="text-4xl font-bold flex justify-center my-4">
+        <h2
+          id="Projects"
+          className="text-4xl font-bold flex justify-center my-4"
+        >
           Projects
         </h2>
         {info.projects.map((project, index) => (
@@ -33,6 +37,7 @@ const MyApp = () => {
           />
         ))}
         <Contact></Contact>
+        <Footer></Footer>
       </InfoContext.Provider>
     </>
   );
