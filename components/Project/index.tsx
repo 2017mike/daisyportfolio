@@ -24,6 +24,10 @@ const Project = ({
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
+
+    addEventListener("resize", (event) => {
+      setWindowWidth(window.innerWidth);
+    });
   }, []);
 
   return (

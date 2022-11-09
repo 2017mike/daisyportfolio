@@ -6,7 +6,7 @@ interface Props {}
 const index = (props: Props) => {
   const info = useContext(InfoContext);
   return (
-    <footer className="footer footer-center p-10 bg-primary text-primary-content">
+    <footer className="footer footer-center p-6 bg-primary text-primary-content">
       <div>
         <p>Copyright © 2022 - All rights reserved</p>
         <div className="grid grid-flow-col gap-4">

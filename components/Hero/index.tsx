@@ -6,7 +6,7 @@ interface Props {}
 const Hero = () => {
   const info = useContext(InfoContext);
   return (
-    <div id="About" className="hero bg-base-200 min-h-screen lg:px-12 xl:px-32">
+    <div id="About" className="hero bg-base-200 min-h-screen lg:px-24 xl:px-44">
       <div className="hero  bg-base-200">
         <div className="hero-content mb-12 flex-col items-center lg:flex-row-reverse gap-4">
           <img
