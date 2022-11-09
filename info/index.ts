@@ -1,6 +1,7 @@
 const info = {
   name: "Nellie Fisher",
   headshot: "https://thispersondoesnotexist.com/image",
+  linkedIn: "https://www.linkedin.com/feed/",
   summary: "I am a full-stack developer with experience in a variety of programming languages and web development frameworks. I have worked on both front-end and back-end development projects, and have a strong understanding of the entire web development process.",
   sections: ["About", "Projects", "Contact"],
   projects: [{
