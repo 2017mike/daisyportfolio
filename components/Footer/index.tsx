@@ -3,7 +3,7 @@ import { InfoContext } from "../../pages/_app";
 
 interface Props {}
 
-const index = (props: Props) => {
+const Footer = (props: Props) => {
   const info = useContext(InfoContext);
   return (
     <footer className="footer footer-center p-6 bg-primary text-primary-content">
@@ -44,4 +44,4 @@ const index = (props: Props) => {
   );
 };
 
-export default index;
+export default Footer;

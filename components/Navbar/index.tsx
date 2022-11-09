@@ -41,6 +41,7 @@ const Navbar = (props: Props) => {
               <a
                 target="_blank"
                 href="https://github.com/2017mike/zapApp/files/9968907/Michael_Scharf_Resume.pdf"
+                rel="noreferrer"
               >
                 Resume
               </a>
@@ -62,6 +63,7 @@ const Navbar = (props: Props) => {
             <a
               target="_blank"
               href="https://github.com/2017mike/fetchExample/blob/92544679b8ccf65cac72bee3daf008a17a891e5f/Michael_Scharf_Resume.pdf"
+              rel="noreferrer"
             >
               Resume
             </a>
