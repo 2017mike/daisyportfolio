@@ -28,8 +28,7 @@ const info = {
     link: "https://dumpstar.io/",
     github: "https://github.com/2017mike/dumpstar.io",
     technologies: ["React", "Redux", "Sass"]
-
-  }
+  },
 ]
 }
 
