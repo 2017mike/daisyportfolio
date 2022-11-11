@@ -6,12 +6,15 @@ interface Props {}
 const Hero = () => {
   const info = useContext(InfoContext);
   return (
-    <div id="About" className="hero bg-base-200 min-h-screen lg:px-24 xl:px-44">
+    <div
+      id="About"
+      className="hero bg-base-200 min-h-screen px-4 lg:px-24 xl:px-44"
+    >
       <div className="hero  bg-base-200">
         <div className="hero-content mb-12 flex-col items-center lg:flex-row-reverse gap-4">
           <img
             src={info.headshot}
-            className="rounded-lg shadow-2xl object-contain w-7/12  md:w-4/12"
+            className="rounded-lg shadow-2xl object-contain w-9/12 sm:w-7/12  md:w-4/12"
           />
           <div>
             <h1 className="text-5xl font-bold text-accent">
