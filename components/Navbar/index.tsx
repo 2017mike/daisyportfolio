@@ -3,8 +3,6 @@ import { InfoContext } from "../../pages/_app";
 
 interface Props {}
 
-const sections = ["About", "Projects", "Contact"];
-
 const Navbar = (props: Props) => {
   const info = useContext(InfoContext);
 
@@ -32,7 +30,7 @@ const Navbar = (props: Props) => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            {sections.map((section) => (
+            {info.sections.map((section) => (
               <li key={section}>
                 <a href={`#${section}`}>{section}</a>
               </li>
@@ -54,7 +52,7 @@ const Navbar = (props: Props) => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
-          {sections.map((section) => (
+          {info.sections.map((section) => (
             <li key={section}>
               <a href={`#${section}`}>{section}</a>
             </li>

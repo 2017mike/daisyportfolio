@@ -4,8 +4,9 @@ const info = {
   linkedIn: "https://www.linkedin.com/in/michael-w-scharf/",
   summary: "I'm a full-stack engineer currently working as a teaching assistant at UC Irvine's web development bootcamp. I help students learn the fundamentals as well as the latest technologies in web development. I'm comfortable with both front-end and back-end development.",
   github: "https://github.com/2017mike",
+  email: "mwscharf@ucdavis.edu",
   sections: ["About", "Projects", "Contact"],
-  projects: [{
+  featuredProjects: [{
     name: 'Zap',
     summary: "A bug-tracking app that aims to combine project management and bug tracking aspects of app development.",
     image: 'https://picsum.photos/600/500', 
@@ -29,7 +30,23 @@ const info = {
     github: "https://github.com/2017mike/dumpstar.io",
     technologies: ["React", "Redux", "Sass"]
   },
-]
+],
+  otherProjects: [
+    {
+    name: 'This Portfolio',
+    summary: "My current personal portfolio! :) Designed and coded by me.",
+    link: "https://daisyportfolio.vercel.app/",
+    github: "https://github.com/2017mike/daisyportfolio",
+    technologies: ["React", "TypeScript", "Tailwind", "DaisyUI"]
+    },
+     {
+    name: 'InkedIn',
+    summary: "An online community for those seeking to create or request tattoo designs.",
+    link: "https://agile-everglades-33019.herokuapp.com/",
+    github: "https://github.com/JEckfeldt/InkedIn",
+    technologies: ["Materialize", "MySQL", "Express", "Sequelize"]
+    },
+  ]
 }
 
 

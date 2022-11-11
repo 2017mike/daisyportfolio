@@ -29,7 +29,7 @@ const Contact = (props: Props) => {
     const body = {
       senderName: formState.name,
       senderEmail: formState.email,
-      receiverEmail: "mwscharf@ucdavis.edu",
+      receiverEmail: info.email,
       message: formState.message,
     };
 

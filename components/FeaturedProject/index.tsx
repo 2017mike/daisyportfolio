@@ -11,7 +11,7 @@ type Props = {
   technologies: string[];
 };
 
-const Project = ({
+const FeaturedProject = ({
   index,
   image,
   summary,
@@ -33,13 +33,13 @@ const Project = ({
   return (
     <>
       {(index % 2 === 0 && windowWidth > 768) || windowWidth < 768 ? (
-        <div className="flex justify-center flex-wrap my-8 px-6 md:gap-6">
+        <div className="flex justify-center flex-wrap my-8 mx-6 md:gap-6">
           <img
-            className="object-cover rounded-2xl sm:w-full md:w-4/12"
+            className="object-cover rounded-2xl w-full sm:w-6/12 md:w-4/12"
             src={image}
             alt=""
           />
-          <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-full md:w-6/12 md:gap-2  ">
+          <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-6/12 md:w-6/12 md:gap-2  ">
             <a href={link} target="_blank" rel="noreferrer">
               <h3 className="stat-value">{name}</h3>
             </a>
@@ -93,8 +93,8 @@ const Project = ({
           </div>
         </div>
       ) : (
-        <div className="flex justify-center flex-wrap my-8 px-6 md:gap-6">
-          <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-full md:w-6/12 md:gap-2  ">
+        <div className="flex justify-center flex-wrap my-8 mx-6 md:gap-6">
+          <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-6/12 md:w-6/12 md:gap-2  ">
             <a href={link} target="_blank" rel="noreferrer">
               <h3 className="stat-value">{name}</h3>
             </a>
@@ -147,7 +147,7 @@ const Project = ({
             </div>
           </div>
           <img
-            className="object-cover rounded-2xl sm:w-full md:w-4/12"
+            className="object-cover rounded-2xl w-full sm:w-6/12 md:w-4/12"
             src={image}
             alt=""
           />
@@ -157,4 +157,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default FeaturedProject;
