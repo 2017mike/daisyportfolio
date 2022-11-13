@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { InfoContext } from "../../pages/_app";
 
 interface Props {}
@@ -6,8 +6,33 @@ interface Props {}
 const Navbar = (props: Props) => {
   const info = useContext(InfoContext);
 
-  return (
-    <div className="navbar bg-base-100">
+  const [showNavState, setShowNavState] = useState(true);
+
+  useEffect(() => {
+    var lastScrollTop = 0;
+
+    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+    window.addEventListener(
+      "scroll",
+      function () {
+        // or window.addEventListener("scroll"....
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop) {
+          // downscroll code
+          console.log("down");
+          setShowNavState(false);
+        } else {
+          // upscroll code
+          console.log("up");
+          setShowNavState(true);
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+      },
+      false
+    );
+  }, []);
+  return showNavState ? (
+    <div className="navbar bg-base-100 fixed z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -69,7 +94,7 @@ const Navbar = (props: Props) => {
         </ul>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Navbar;

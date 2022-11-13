@@ -12,7 +12,7 @@ const info = {
     image: 'https://picsum.photos/600/500', 
     link: "https://floating-earth-73159.herokuapp.com/",
     github: "https://github.com/2017mike/zapApp",
-    technologies: ["React", "Node.js", "Express", "Mongo", "Material UI"]
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Material UI"]
   },
   {
     name: 'tabAngel.io',

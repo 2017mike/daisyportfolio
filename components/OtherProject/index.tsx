@@ -1,4 +1,6 @@
 import React from "react";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 type Props = {
   name: string;
@@ -18,32 +20,34 @@ const OtherProject = ({
   technologies,
 }: Props) => {
   return (
-    <div className="card bg-base-300 text-primary-content">
-      <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <p>{summary}</p>
-        <div className="my-4">
-          {technologies.map((tech, index) => (
-            <span key={index} className="text-base-content">
-              {tech}{" "}
-            </span>
-          ))}
-        </div>
-        <div className="card-actions justify-end">
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary"
-          >
-            Link
-          </a>
-          <a href={github} target="_blank" rel="noreferrer" className="btn">
-            Github
-          </a>
+    <AnimationOnScroll animateOnce animateIn="animate__slideInUp">
+      <div className="card bg-base-300 text-primary-content">
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
+          <p>{summary}</p>
+          <div className="my-4">
+            {technologies.map((tech, index) => (
+              <span key={index} className="text-base-content">
+                {tech}{" "}
+              </span>
+            ))}
+          </div>
+          <div className="card-actions justify-end">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Link
+            </a>
+            <a href={github} target="_blank" rel="noreferrer" className="btn">
+              Github
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </AnimationOnScroll>
   );
 };
 

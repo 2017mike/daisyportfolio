@@ -11,10 +11,10 @@ const Hero = () => {
       className="hero bg-base-200 min-h-screen px-4 lg:px-24 xl:px-44"
     >
       <div className="hero  bg-base-200">
-        <div className="hero-content mb-12 flex-col items-center lg:flex-row-reverse gap-4">
+        <div className="hero-content mb-12 flex-col items-center lg:mt-28 lg:flex-row-reverse gap-4">
           <img
             src={info.headshot}
-            className="rounded-lg shadow-2xl object-contain w-9/12 sm:w-7/12  md:w-4/12"
+            className="rounded-lg shadow-2xl object-contain mt-16 w-9/12 sm:w-7/12  md:w-4/12 lg:mt-0"
           />
           <div>
             <h1 className="text-5xl font-bold text-accent">
