@@ -13,18 +13,16 @@ const Navbar = (props: Props) => {
   function update() {
     if (scrollY?.current < scrollY?.prev) {
       setHidden(false);
-      console.log("visible");
     } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
       setHidden(true);
-      console.log("hidden");
     }
   }
 
   const variants = {
     /** this is the "visible" key and it's respective style object **/
-    visible: { opacity: 1, zIndex: 50 },
+    visible: { opacity: 1 },
     /** this is the "hidden" key and it's respective style object **/
-    hidden: { opacity: 0, zIndex: 50 },
+    hidden: { opacity: 0 },
   };
 
   useEffect(() => {
@@ -39,7 +37,7 @@ const Navbar = (props: Props) => {
       animate={hidden ? "hidden" : "visible"}
       /** I'm also going to add a custom easing curve and duration for the animation **/
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
-      className="navbar fixed bg-base-100 shadow-4xl"
+      className="navbar fixed bg-base-100 shadow-xl z-50"
     >
       {/* <div className=" "> */}
       <div className="navbar-start">
@@ -70,11 +68,7 @@ const Navbar = (props: Props) => {
               </li>
             ))}
             <li>
-              <a
-                target="_blank"
-                href="https://github.com/2017mike/zapApp/files/9968907/Michael_Scharf_Resume.pdf"
-                rel="noreferrer"
-              >
+              <a target="_blank" href="/Resume.pdf" rel="noreferrer">
                 Resume
               </a>
             </li>
@@ -92,11 +86,7 @@ const Navbar = (props: Props) => {
             </li>
           ))}
           <li>
-            <a
-              target="_blank"
-              href="https://github.com/2017mike/fetchExample/blob/92544679b8ccf65cac72bee3daf008a17a891e5f/Michael_Scharf_Resume.pdf"
-              rel="noreferrer"
-            >
+            <a target="_blank" href="/Resume.pdf" rel="noreferrer">
               Resume
             </a>
           </li>
