@@ -27,6 +27,12 @@ const MyApp = () => {
         >
           Featured Projects
         </h2>
+        <div className="flex justify-center mx-12">
+          <p>
+            All projects have test credentials of "test123" for username and
+            password.
+          </p>
+        </div>
 
         {info.featuredProjects.map((project, index) => (
           <FeaturedProject

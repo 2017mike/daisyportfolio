@@ -32,15 +32,20 @@ const FeaturedProject = ({
     });
   }, []);
 
+  const handleGoToLink = (link: string) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <>
       {(index % 2 === 0 && windowWidth > 768) || windowWidth < 768 ? (
         <AnimationOnScroll animateOnce animateIn="animate__slideInLeft">
           <div className="flex justify-center flex-wrap my-8 mx-6 md:gap-6">
             <img
-              className="object-cover rounded-2xl w-full sm:w-6/12 md:w-4/12"
+              className="object-cover rounded-2xl w-full cursor-pointer sm:w-6/12 md:w-4/12"
               src={image}
-              alt=""
+              alt={`A mockup of ${name}`}
+              onClick={() => handleGoToLink(link)}
             />
             <div className="shadow-md flex flex-col rounded-2xl justify-around gap-8 p-6 bg-base-300 sm:w-6/12 md:w-6/12 md:gap-2  ">
               <a href={link} target="_blank" rel="noreferrer">
@@ -152,9 +157,10 @@ const FeaturedProject = ({
               </div>
             </div>
             <img
-              className="object-cover rounded-2xl w-full sm:w-6/12 md:w-4/12"
+              className="object-cover rounded-2xl w-full cursor-pointer sm:w-6/12 md:w-4/12"
               src={image}
-              alt=""
+              alt={`A mockup of ${name}`}
+              onClick={() => handleGoToLink(link)}
             />
           </div>
         </AnimationOnScroll>
