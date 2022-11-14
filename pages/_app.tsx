@@ -6,6 +6,7 @@ import FeaturedProject from "../components/FeaturedProject";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import OtherProject from "../components/OtherProject";
+import Head from "next/head";
 
 import "../styles/globals.css";
 
@@ -17,6 +18,13 @@ const MyApp = () => {
   return (
     <>
       <InfoContext.Provider value={info}>
+        <Head>
+          <title>Michael Scharf</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <Navbar />
 
         <Hero />
