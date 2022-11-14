@@ -1,38 +1,47 @@
 import React, { useContext, useState, useEffect } from "react";
 import { InfoContext } from "../../pages/_app";
-
+import { motion, AnimatePresence, useScroll } from "framer-motion";
 interface Props {}
 
 const Navbar = (props: Props) => {
   const info = useContext(InfoContext);
+  const { scrollY }: any = useScroll();
+  // had to specify as any, best fix for right now
 
-  const [showNavState, setShowNavState] = useState(true);
+  const [hidden, setHidden] = useState(false);
+
+  function update() {
+    if (scrollY?.current < scrollY?.prev) {
+      setHidden(false);
+      console.log("visible");
+    } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
+      setHidden(true);
+      console.log("hidden");
+    }
+  }
+
+  const variants = {
+    /** this is the "visible" key and it's respective style object **/
+    visible: { opacity: 1, zIndex: 50 },
+    /** this is the "hidden" key and it's respective style object **/
+    hidden: { opacity: 0, zIndex: 50 },
+  };
 
   useEffect(() => {
-    var lastScrollTop = 0;
+    return scrollY.onChange(() => update());
 
     // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-    window.addEventListener(
-      "scroll",
-      function () {
-        // or window.addEventListener("scroll"....
-        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-        if (st > lastScrollTop) {
-          // downscroll code
-          console.log("down");
-          setShowNavState(false);
-        } else {
-          // upscroll code
-          console.log("up");
-          setShowNavState(true);
-        }
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-      },
-      false
-    );
   }, []);
-  return showNavState ? (
-    <div className="navbar bg-base-100 fixed z-10">
+  return (
+    <motion.div
+      variants={variants}
+      /** it's right here that we match our boolean state with these variant keys **/
+      animate={hidden ? "hidden" : "visible"}
+      /** I'm also going to add a custom easing curve and duration for the animation **/
+      transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
+      className="navbar fixed bg-base-100 shadow-4xl"
+    >
+      {/* <div className=" "> */}
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -93,8 +102,9 @@ const Navbar = (props: Props) => {
           </li>
         </ul>
       </div>
-    </div>
-  ) : null;
+      {/* </div> */}
+    </motion.div>
+  );
 };
 
 export default Navbar;

@@ -18,13 +18,16 @@ const MyApp = () => {
     <>
       <InfoContext.Provider value={info}>
         <Navbar />
+
         <Hero />
+
         <h2
           id="Projects"
           className="text-4xl font-bold flex justify-center my-4"
         >
           Featured Projects
         </h2>
+
         {info.featuredProjects.map((project, index) => (
           <FeaturedProject
             key={index}
@@ -63,7 +66,6 @@ const MyApp = () => {
             </div>
           </>
         ) : null}
-        {/* </div> */}
         <Contact></Contact>
         <Footer></Footer>
       </InfoContext.Provider>
