@@ -24,6 +24,12 @@ Another issue that I ran into was uploading the Resume section and pictures. Alt
 
 The biggest issue I faced was the transition animation on scroll with the navbar. While I was able to use animate.css and a package called react-animation-on-scroll for the projects, this wasn't sufficient for the navbar. I had to learn how to use a package called framer motion to deal with the state change of the navbar going from hidden to not hidden. Initially it was pretty easy to get the navbar to show and not show based on scroll, but the animation was choppy. After a lot of trial and error I realized I had an issue with the Z-index of the navbar. There was a stacking context issue that I dealt with by defining the class names within the animation div itself rather than defining another div inside it.
 
+###Screenshots
+
+![Screen Shot 2022-11-16 at 7 12 13 PM](https://user-images.githubusercontent.com/82760568/202346086-bb12d556-0328-4fc0-9348-9ab175f1100f.png)
+![Screen Shot 2022-11-16 at 7 12 23 PM](https://user-images.githubusercontent.com/82760568/202346097-6937e01d-7d4a-4169-bae3-524ba730d646.png)
+<img width="1239" alt="Screen Shot 2022-11-16 at 7 12 38 PM" src="https://user-images.githubusercontent.com/82760568/202346105-583d9b68-d42f-4a64-9d82-5f07ae8f4626.png">
+
 ## Installation
 
 If you'd like to run this project locally, then first git clone.
