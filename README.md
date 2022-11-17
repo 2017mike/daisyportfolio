@@ -22,11 +22,13 @@ I had a few challenges when it came to making this portfolio. One issue that I h
 
 Another issue that I ran into was uploading the Resume section and pictures. Although it didn't take that long to fix, it was a bit challenging to find out where to put the assets, as NextJS doesn't allow you to have assets within the pages section. I had to put my resume and project pictures in the public folder and link to them with a '/'.
 
-The biggest issue I faced was the transition animation on scroll with the navbar. While I was able to use animate css and a package called react-animation-on-scroll for the cards, this wasn't sufficient for the navbar. I had to learn how to use a package called framer motion to deal with the state change of the navbar going from hidden to not hidden. Initially it was pretty easy to get the navbar to show and not show based on scroll, but the animation was choppy. After a lot of trial and error I realized I had an issue with the Z-index of the navbar. There was a stacking context issue that I dealt with by defining the class names within the animation div itself rather than defining another div inside it.
+The biggest issue I faced was the transition animation on scroll with the navbar. While I was able to use animate.css and a package called react-animation-on-scroll for the projects, this wasn't sufficient for the navbar. I had to learn how to use a package called framer motion to deal with the state change of the navbar going from hidden to not hidden. Initially it was pretty easy to get the navbar to show and not show based on scroll, but the animation was choppy. After a lot of trial and error I realized I had an issue with the Z-index of the navbar. There was a stacking context issue that I dealt with by defining the class names within the animation div itself rather than defining another div inside it.
 
 ## Installation
 
 If you'd like to run this project locally, then first git clone.
+
+After that, run npm i in the terminal.
 
 Then, run the development server in the terminal:
 
