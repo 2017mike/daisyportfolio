@@ -20,9 +20,9 @@ const Navbar = (props: Props) => {
 
   const variants = {
     /** this is the "visible" key and it's respective style object **/
-    visible: { opacity: 1 },
+    visible: { top: "0vh" },
     /** this is the "hidden" key and it's respective style object **/
-    hidden: { opacity: 0 },
+    hidden: { top: "-20vh" },
   };
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
       /** it's right here that we match our boolean state with these variant keys **/
       animate={hidden ? "hidden" : "visible"}
       /** I'm also going to add a custom easing curve and duration for the animation **/
-      transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
+      transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.8 }}
       className="navbar fixed bg-base-100 shadow-xl z-50"
     >
       {/* <div className=" "> */}
