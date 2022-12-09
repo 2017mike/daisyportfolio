@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
       animate={hidden ? "hidden" : "visible"}
       /** I'm also going to add a custom easing curve and duration for the animation **/
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.8 }}
-      className="navbar fixed bg-base-100 shadow-xl z-50"
+      className="navbar fixed bg-base-100  z-50"
     >
       {/* <div className=" "> */}
       <div className="navbar-start">

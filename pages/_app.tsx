@@ -7,7 +7,6 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import OtherProject from "../components/OtherProject";
 import Head from "next/head";
-
 import "../styles/globals.css";
 
 import info from "../info";
