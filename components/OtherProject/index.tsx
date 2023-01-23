@@ -23,7 +23,7 @@ const OtherProject = ({
     <AnimationOnScroll
       animateOnce
       animateIn="animate__slideInUp"
-      className="card bg-base-300 text-primary-content"
+      className="card bg-base-300"
     >
       {/* <div> */}
       <div className="card-body">

@@ -62,7 +62,7 @@ const Contact = (props: Props) => {
           rel="noreferrer"
           target="_blank"
           href={info.linkedIn}
-          className="text-cyan-400"
+          className="text-info"
         >
           LinkedIn.
         </a>

@@ -1,6 +1,6 @@
 const info = {
   name: "Michael Scharf",
-  headshot: "https://media-exp1.licdn.com/dms/image/C5603AQFvNIJJeybEOQ/profile-displayphoto-shrink_800_800/0/1622703483261?e=1673481600&v=beta&t=0bNnSTVUE0V6-f9CPCvLpDrA-3guD8WlCIrimZ3KSZ4",
+  headshot: "/linkedin.jpeg",
   linkedIn: "https://www.linkedin.com/in/michael-w-scharf/",
   summary: "I'm a full-stack engineer currently working as a teaching assistant at UC Irvine's web development bootcamp. I help students learn the fundamentals as well as the latest technologies in web development. I'm comfortable with both front-end and back-end development.",
   github: "https://github.com/2017mike",

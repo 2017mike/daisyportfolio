@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
     return scrollY.onChange(() => update());
 
     // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-  }, []);
+  });
   return (
     <motion.div
       variants={variants}
@@ -39,7 +39,6 @@ const Navbar = (props: Props) => {
       transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.8 }}
       className="navbar fixed bg-base-100  z-50"
     >
-      {/* <div className=" "> */}
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -74,7 +73,7 @@ const Navbar = (props: Props) => {
             </li>
           </ul>
         </div>
-        <a href="" className="btn btn-ghost normal-case text-xl text-accent">
+        <a href="" className="btn btn-ghost text-accent normal-case text-xl">
           {info.name}
         </a>
       </div>
@@ -92,7 +91,6 @@ const Navbar = (props: Props) => {
           </li>
         </ul>
       </div>
-      {/* </div> */}
     </motion.div>
   );
 };
