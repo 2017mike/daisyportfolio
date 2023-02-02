@@ -2,7 +2,7 @@ const info = {
   name: "Michael Scharf",
   headshot: "/linkedin.jpeg",
   linkedIn: "https://www.linkedin.com/in/michael-w-scharf/",
-  summary: "I'm a full-stack engineer currently working as a teaching assistant at UC Irvine's web development bootcamp. I help students learn the fundamentals as well as the latest technologies in web development. I'm comfortable with both front-end and back-end development.",
+  summary: "I'm a full-stack engineer at Public Impact, driving positive change for students and educators through the Opportunity Culture initiative and continuous innovation. With a combination of technical expertise and creative problem-solving, I deliver high-quality and user-friendly solutions to enhance websites, software, and applications.",
   github: "https://github.com/2017mike",
   email: "mwscharf@ucdavis.edu",
   sections: ["About", "Projects", "Contact"],
@@ -39,13 +39,7 @@ const info = {
     github: "https://github.com/2017mike/daisyportfolio",
     technologies: ["React", "TypeScript", "Tailwind", "DaisyUI"]
     },
-     {
-    name: 'InkedIn',
-    summary: "An online community for those seeking to create or request tattoo designs.",
-    link: "https://agile-everglades-33019.herokuapp.com/",
-    github: "https://github.com/JEckfeldt/InkedIn",
-    technologies: ["Materialize", "MySQL", "Express", "Sequelize"]
-    },
+   
   ]
 }
 
