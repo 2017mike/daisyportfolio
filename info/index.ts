@@ -10,7 +10,7 @@ const info = {
     name: 'Zap',
     summary: "A bug-tracking app that aims to combine project management and bug tracking aspects of app development.",
     image: '/zapMock.png', 
-    link: "https://floating-earth-73159.herokuapp.com/",
+    link: "https://zap-app-646e95e3d663.herokuapp.com/",
     github: "https://github.com/2017mike/zapApp",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Material UI"]
   },
@@ -21,14 +21,6 @@ const info = {
     link: "https://tabangel.io",
     github: "https://github.com/",
     technologies: ["HTML", "CSS", "JavaScript", "Express", "MySQL", "Node"]
-  },
-  {
-    name: 'DumpStar.io',
-    summary: "A website where users can store their favorite links in folders. Data is stored in local storage and users can drag and drop folders.",
-    image: '/dumpstarMock.png', 
-    link: "https://dumpstar.io/",
-    github: "https://github.com/2017mike/dumpstar.io",
-    technologies: ["React", "Redux", "Sass"]
   },
 ],
   otherProjects: [
