@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
   return (
     <footer className="footer footer-center p-6 bg-primary text-primary-content">
       <div>
-        <p>Copyright © 2022 - All rights reserved</p>
+        <p>Copyright BloomGrid Studios© 2026 - All rights reserved</p>
         <div className="grid grid-flow-col gap-4">
           <a href={info.github} target="_blank" rel="noreferrer">
             <svg
