@@ -2,7 +2,7 @@ const info = {
   name: "Michael Scharf",
   headshot: "/linkedin.jpeg",
   linkedIn: "https://www.linkedin.com/in/michael-w-scharf/",
-  summary: "I'm a full-stack engineer at Public Impact, driving positive change for students and educators through the Opportunity Culture initiative and continuous innovation. With a combination of technical expertise and creative problem-solving, I deliver high-quality and user-friendly solutions to enhance websites, software, and applications.",
+  summary: "I'm a full-stack engineer driving positive change for students and educators. I offer a combination of technical expertise and creative problem-solving to deliver high-quality and user-friendly solutions to enhance websites, software, and applications.",
   github: "https://github.com/2017mike",
   email: "mwscharf@ucdavis.edu",
   sections: ["About", "Projects", "Contact"],
